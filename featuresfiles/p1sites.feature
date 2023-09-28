@@ -78,9 +78,9 @@ Feature: Testing API for P1-sites
   Scenario: Verify M365 Outlook Landing page
     Given the user ready with microsoft base uri
     When I send a GET request "en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook"
-    Then the response should have status code 400
+    Then the response should have status code 200
 
   Scenario: Verify Azure page
     Given the user ready with azure base uri
     When I send a GET request
-    Then the response should have status code 400
+    Then the response should have status code 200
